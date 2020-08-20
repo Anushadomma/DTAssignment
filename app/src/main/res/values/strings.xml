@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DTAssignment</string>
+
+    //DetailAppDataActivity
+    <string name="detail_appData_activity">DetailAppDataActivity</string>
 </resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="lName :"
+        style="@style/headLine"
+        />
+
+    <TextView
+        android:id="@+id/textView_name"
+        style="@style/headLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/textView_lastName"
+        android:text="sbb jhsb " />
+
+    <ImageView
+        android:id="@+id/imageView_productThumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/textView_productName"
+        style="@style/headLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_name"
+        android:layout_toRightOf="@+id/imageView_productThumbnail"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView" />
+
+
+
+    <TextView
+        android:id="@+id/textView_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_productName"
+        android:layout_toRightOf="@+id/imageView_productThumbnail"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        style="@style/headLine"
+        android:text="TextView" />
+</RelativeLayout>

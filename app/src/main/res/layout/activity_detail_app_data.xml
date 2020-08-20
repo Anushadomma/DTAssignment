@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailAppDataActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#008080">
+
+        <TextView
+            android:id="@+id/detailAppDataText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/detail_appData_activity"
+            style="@style/header"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/imageView_back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_button"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/relativeLayout"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_productNameDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/textView_produtRatingDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_productNameDetails"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <ImageView
+                android:id="@+id/imageView_productThumbnailDetails"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView_produtRatingDetails"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+           <TextView
+            android:id="@+id/textView_appId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_productThumbnailDetails"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            style="@style/headLine"
+            tools:ignore="NotSibling" />
+
+            <ImageView
+                android:id="@+id/imageView_averageRating"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView_appId"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+             <TextView
+                 android:id="@+id/textView_bidRate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/imageView_averageRating"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginLeft="20dp"
+                 style="@style/headLine"
+                 android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_billingType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_bidRate"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_callToAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_billingType"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_campaignDisplayOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_callToAction"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_campaignId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_campaignDisplayOrder"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_campaignTypeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_campaignId"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_categoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_campaignTypeId"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_clickProxyURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_categoryName"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_creativeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_clickProxyURL"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_externalMetadata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_creativeId"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_homeScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_externalMetadata"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_impressionTrackingURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_homeScreen"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_isRandomPick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_impressionTrackingURL"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_numberOfRatings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_isRandomPick"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_productDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_numberOfRatings"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_productId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_productDescription"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_numberOfDownloads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_productId"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_tstiEligible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_numberOfDownloads"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/textView_stiEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_tstiEligible"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                style="@style/headLine"
+                android:text=""/>
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
