@@ -25,7 +25,7 @@ public class AppXmlPullParser {
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
             XmlPullParser xpp = factory.newPullParser();
 
-            FileInputStream fis = ctx.openFileInput("echtestsession&totalCampaignsRequested=10");
+            FileInputStream fis = ctx.openFileInput("techtestsession&totalCampaignsRequested=10");
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
 
             xpp.setInput(reader);
