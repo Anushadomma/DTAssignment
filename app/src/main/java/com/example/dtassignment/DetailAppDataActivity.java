@@ -75,7 +75,7 @@ public class DetailAppDataActivity extends Activity {
         Intent in = getIntent();
         pos = in.getExtras().getInt("position");
 
-       CustomAppDataAdapter customAppDataAdapter = new CustomAppDataAdapter(getApplicationContext(), -1, AppXmlPullParser.getStackSitesFromFile(DetailAppDataActivity.this));
+       CustomAppDataAdapter customAppDataAdapter = new CustomAppDataAdapter(getApplicationContext(), -1, AppXmlPullParser.getAppDataFromFile(DetailAppDataActivity.this));
 
         productNameDetail.setText("ProductName:  "+customAppDataAdapter.getItem(pos).getProductName());
         ratingDetail.setText("ProductRating:  "+customAppDataAdapter.getItem(pos).getRating());
