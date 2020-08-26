@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
         protected Void doInBackground(Void... arg0) {
             //Download the file
             try {
-                FileLoader.DownloadFromUrl("http://ads.appia.com/getAds?id=236&password=OVUJ1DJN&siteId=10777&deviceId=4230&sessionId=techtestsession&totalCampaignsRequested=10", openFileOutput("echtestsession&totalCampaignsRequested=10", Context.MODE_PRIVATE));
+                FileLoader.DownloadFromUrl("http://ads.appia.com/getAds?id=236&password=OVUJ1DJN&siteId=10777&deviceId=4230&sessionId=techtestsession&totalCampaignsRequested=10", openFileOutput("techtestsession&totalCampaignsRequested=10", Context.MODE_PRIVATE));
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
