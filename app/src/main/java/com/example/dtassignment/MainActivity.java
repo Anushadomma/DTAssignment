@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
             AppDataTask download = new AppDataTask();
             download.execute();
         }else{
-            customAppDataAdapter = new CustomAppDataAdapter(getApplicationContext(), -1, AppXmlPullParser.getStackSitesFromFile(MainActivity.this));
+            customAppDataAdapter = new CustomAppDataAdapter(getApplicationContext(), -1, AppXmlPullParser.getAppDataFromFile(MainActivity.this));
             listView.setAdapter(customAppDataAdapter);
         }
     }
@@ -71,7 +71,7 @@ public class MainActivity extends Activity {
 
         @Override
         protected void onPostExecute(Void result){
-            customAppDataAdapter = new CustomAppDataAdapter(MainActivity.this, -1, AppXmlPullParser.getStackSitesFromFile(MainActivity.this));
+            customAppDataAdapter = new CustomAppDataAdapter(MainActivity.this, -1, AppXmlPullParser.getAppDataFromFile(MainActivity.this));
             listView.setAdapter(customAppDataAdapter);
         }
     }

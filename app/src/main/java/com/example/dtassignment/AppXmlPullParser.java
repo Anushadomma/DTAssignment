@@ -13,7 +13,7 @@ import java.util.List;
 
 public class AppXmlPullParser {
 
-    public static List<AppData> getStackSitesFromFile(Context ctx) {
+    public static List<AppData> getAppDataFromFile(Context ctx) {
 
         List<AppData> appData;
         appData = new ArrayList<AppData>();
